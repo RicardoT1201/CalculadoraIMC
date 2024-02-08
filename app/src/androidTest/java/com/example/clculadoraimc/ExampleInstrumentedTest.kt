@@ -22,3 +22,4 @@ class ExampleInstrumentedTest {
         assertEquals("com.example.clculadoraimc", appContext.packageName)
     }
 }
+
