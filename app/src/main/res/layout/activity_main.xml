@@ -6,48 +6,104 @@
     android:layout_height="match_parent">
 
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/scales_svgrepo_com"
+        tools:layout_editor_absoluteX="135dp" />
+
     <TextView
-        android:id="@+id/text1"
-        android:layout_width="103dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="56dp"
-        android:gravity="center"
-        android:text="Peso"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginBottom="20dp"
+        android:text="Edad:"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+        tools:layout_editor_absoluteX="26dp" />
 
     <EditText
-        android:layout_width="111dp"
-        android:layout_height="66dp"
-        android:text="Altura"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="147dp" />
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="20dp"
+        android:text="Peso(KG):"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber2"
+        tools:layout_editor_absoluteX="27dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        tools:layout_editor_absoluteX="24dp" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="337dp"
+        android:id="@+id/appCompatButton"
+        android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/purple_200"
         android:text="Calcular"
         android:textColor="@color/design_default_color_primary"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="37dp" />
+        tools:layout_editor_absoluteX="22dp" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="50dp"
-        android:layout_height="30dp"
-        tools:layout_editor_absoluteX="203dp"
 
-        tools:layout_editor_absoluteY="79dp" />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginBottom="20dp"
+        android:text="Altura:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber3"
+        tools:layout_editor_absoluteX="25dp" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="50dp"
-        android:layout_height="30dp"
-        tools:layout_editor_absoluteX="296dp"
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginBottom="20dp"
+        android:text="Sexo:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber4"
+        tools:layout_editor_absoluteX="25dp" />
 
-        tools:layout_editor_absoluteY="79dp" />
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber4"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:ems="10"
+        android:inputType="text"
+        android:onClick="imc"
+        android:text=""
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="576dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
